@@ -57,12 +57,7 @@ public static void main(String[] args) {
                 int eixos = leitor.nextInt();
                 leitor.nextLine();
 
-                caminhao caminhao = new caminhao(
-                        pCam,
-                        mCam,
-                        cCam,
-                        eixos
-                );
+                caminhao caminhao = new caminhao(pCam, mCam, cCam, eixos);
 
                 frota.add(caminhao);
 
@@ -71,7 +66,7 @@ public static void main(String[] args) {
 
             case 3:
 
-                System.out.println("\n--- RELATÓRIO DA FROTA E SIMULAÇÃO DE FRETE (Para 100km) ---");
+                System.out.println("\n-RELATÓRIO DA FROTA E SIMULAÇÃO DE FRETE (Para 100km)");
 
                 if (frota.isEmpty()) {
                     System.out.println("Nenhum veículo cadastrado na frota.");
